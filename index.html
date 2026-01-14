@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marci Metzger Real Estate</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-yu0XJSmksS+Jkcl5bGpG9G/Pu5XzUKVp30k+z2U14Vt+71Q3I0RZlZLyyR7nI+2cgE3EyU8LPkmW4n0fqQ+1IQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+/>
+</head>
+<body>
+
+    
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Marci Metzger Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Listings</a></li>
+                <li><a href="#">Let's Move</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class="main-wrapper">
+        <main class="hero-container">
+
+            
+            <section class="agent-section">
+
+                <div class="left-buttons">
+                    <a href="#search-listing">Search Listing</a>
+                    <a href="get-it-sold.html">Get It Sold</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                
+                <img src="Marci.png" alt="Marci Metzger" class="floating-agent">
+
+                
+                <button type="button" class="cta-btn">GET IN TOUCH</button>
+            </section>
+
+            
+            <section class="property-section">
+                <div class="property-frame">
+                    <img src="1.jpg" alt="Featured Property">
+                </div>
+                <div class="text-content">
+                    <h1>Pahrump Realtor</h1>
+                    <p>MARCI METZGER - THE RIDGE REALTY GROUP</p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    
+<footer id="footer">
+    
+    <div class="social-links">
+    <a href="https://www.facebook.com/MarciHomes/" target="_blank" rel="noopener noreferrer">
+    <img src="facebook.png" alt="Facebook" class="social-icon"></a>
+
+    <a href="https://www.instagram.com/marciandlauren_nvrealtors/" target="_blank" rel="noopener noreferrer">
+    <img src="instagram.png" alt="Instagram" class="social-icon"></a>
+
+    <a href="https://www.linkedin.com/in/marci-metzger-30642496/" target="_blank" rel="noopener noreferrer">
+    <img src="linkedin.png" alt="LinkedIn" class="social-icon"></a>
+
+    <a href="https://www.yelp.com/biz/marci-metzger-the-ridge-realty-pahrump" target="_blank" rel="noopener noreferrer">
+    <img src="yelp.png" alt="Yelp" class="social-icon"></a>
+    </div>
+
+    
+    <p class="footer-copyright">
+        © 2023 Marci METZGER Homes - All Rights Reserved
+    </p>
+
+    
+    <hr class="footer-separator">
+
+    
+    <div class="powered-by">
+        <span>Powered by</span>
+        <img src="21.png" alt="Go Daddy">
+    </div>
+</footer>
+
+
+
+    
+    <div id="searchPopup" class="popup-overlay">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>Search Listings</h2>
+
+            <form id="searchForm">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="Enter city or zip code">
+
+                <label for="type">Property Type</label>
+                <select id="type" name="type">
+                    <option value="">Any</option>
+                    <option value="house">House</option>
+                    <option value="condo">Condo</option>
+                    <option value="land">Land</option>
+                </select>
+
+                <label for="sort">Sort By</label>
+                <select id="sort" name="sort">
+                    <option value="newest">Newest</option>
+                    <option value="oldest">Oldest</option>
+                    <option value="price-low-high">Least Expensive to Most</option>
+                    <option value="price-high-low">Most Expensive to Least</option>
+                    <option value="beds-low-high">Bedrooms (Low to High)</option>
+                    <option value="beds-high-low">Bedrooms (High to Low)</option>
+                    <option value="baths-high-low">Bathrooms (High to Low)</option>
+                    <option value="baths-low-high">Bathrooms (Low to High)</option>
+                </select>
+
+                <label for="bedrooms">Bedrooms</label>
+                <select id="bedrooms" name="bedrooms">
+                    <option value="">Any</option>
+                    <option value="1">1+</option>
+                    <option value="2">2+</option>
+                    <option value="3">3+</option>
+                    <option value="4">4+</option>
+                </select>
+
+                <label for="bathrooms">Bathrooms</label>
+                <select id="bathrooms" name="bathrooms">
+                    <option value="">Any</option>
+                    <option value="1">1+</option>
+                    <option value="2">2+</option>
+                    <option value="3">3+</option>
+                    <option value="4">4+</option>
+                </select>
+
+                <label for="minPrice">Min Price</label>
+                <input type="number" id="minPrice" name="minPrice" placeholder="0">
+
+                <label for="maxPrice">Max Price</label>
+                <input type="number" id="maxPrice" name="maxPrice" placeholder="No Limit">
+
+                <button type="submit" class="search-btn">Search Now</button>
+            </form>
+        </div>
+    </div>
+
+    
+<div id="contactPopup" class="popup-overlay" style="display:none;">
+    <div class="popup-content">
+        <span class="close-btn" id="closeContact">&times;</span>
+
+        <div class="contact-popup-grid">
+
+            
+            <div>
+                <h2>Send Message</h2>
+
+                <form>
+                    <label>Name</label>
+                    <input type="text" placeholder="Your name">
+
+                    <label>Email *</label>
+                    <input type="email" required placeholder="Your email">
+
+                    <label>Message</label>
+                    <textarea placeholder="Write your message..."></textarea>
+
+                    <button type="submit" class="search-btn">Send</button>
+
+               <p style="font-size:0.75rem; color:#aaa; margin-top:10px; font-family: 'Poppins', sans-serif;">
+                This site is protected by reCAPTCHA and the Google
+                <a href="https://policies.google.com/privacy" target="_blank" 
+                style="color:#f3c677; background-color:#222; padding:2px 5px; border-radius:4px; text-decoration:none; font-weight:600;">
+                Privacy Policy
+                </a>
+                and
+                <a href="https://policies.google.com/terms" target="_blank" 
+                style="color:#f3c677; background-color:#222; padding:2px 5px; border-radius:4px; text-decoration:none; font-weight:600;">
+                Terms of Service
+                </a>
+                apply.
+</p>
+                </form>
+            </div>
+
+            
+            <div class="contact-info">
+                <div class="whatsapp">
+                    Message us on WhatsApp
+                </div>
+
+                <h3>Marci Metzger – THE RIDGE REALTY GROUP</h3>
+                <p>3190 HW-160, Suite F</p>
+                <p>Pahrump, Nevada 89048</p>
+
+                <p><strong>(206) 919-6886</strong></p>
+
+                <div class="office-hours">
+                    <h3>Office Hours</h3>
+                    <p><strong>Open daily</strong></p>
+                    <p>8:00 am – 7:00 pm</p>
+                    <p>Appointments outside office hours available upon request.</p>
+                    <strong>Just call!</strong>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+
+    const contactPopup = document.getElementById('contactPopup');
+    const contactLinks = document.querySelectorAll('a[href="#contact"], .cta-btn');
+    const closeContact = document.getElementById('closeContact');
+
+    contactLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            contactPopup.style.display = 'flex';
+        });
+    });
+
+    closeContact.addEventListener('click', () => {
+        contactPopup.style.display = 'none';
+    });
+
+    window.addEventListener('click', function (e) {
+        if (e.target === contactPopup) {
+            contactPopup.style.display = 'none';
+        }
+    });
+</script>
+
+    <script>
+        const searchButton = document.querySelector('.left-buttons a[href="#search-listing"]');
+        const popup = document.getElementById('searchPopup');
+        const closeBtn = document.querySelector('.close-btn');
+
+        searchButton.addEventListener('click', function (e) {
+            e.preventDefault();
+            popup.style.display = 'flex';
+        });
+
+        closeBtn.addEventListener('click', function () {
+            popup.style.display = 'none';
+        });
+
+        window.addEventListener('click', function (e) {
+            if (e.target === popup) {
+                popup.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+</html>
